@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pallavi Raghu | Financial Analyst</title>
+<title>Pallavi Raghu | Ecommerce Assistant | Financial Analyst</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -221,6 +221,27 @@ footer {
 <footer>
   © 2026 Pallavi Raghu | Structured. Strategic. Scalable.
 </footer>
+
+<script>
+  const sections = document.querySelectorAll("section");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = "1";
+        entry.target.style.transform = "translateY(0)";
+      }
+    });
+  }, { threshold: 0.1 });
+
+  sections.forEach(section => {
+    section.style.opacity = "0";
+    section.style.transform = "translateY(40px)";
+  section.style.transition = "all 0.9s cubic-bezier(0.4, 0, 0.2, 1)";
+
+    observer.observe(section);
+  });
+</script>
 
 </body>
 </html>
