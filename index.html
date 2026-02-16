@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pallavi Raghu | Ecommerce Assistant | Financial Analyst</title>
+<title>Pallavi Raghu | Financial Analyst</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -26,105 +26,94 @@ body {
   font-family: 'Inter', sans-serif;
   background: var(--soft-white);
   color: var(--charcoal);
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 .container {
-  width: 85%;
+  width: 90%;
   max-width: 1100px;
   margin: auto;
-}
-
-section {
   padding: 80px 0;
 }
 
-h1 {
-  font-size: 48px;
-  font-weight: 700;
+h1, h2, h3 {
+  font-weight: 600;
 }
 
 h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-h3 {
-  font-size: 20px;
-  margin-bottom: 8px;
-}
-
-p {
-  color: var(--graphite);
+  margin-bottom: 30px;
+  font-size: 28px;
 }
 
 .hero {
-  height: 90vh;
-  display: flex;
-  align-items: center;
+  background: white;
+  text-align: center;
+  padding: 120px 20px;
 }
 
-.hero-content {
-  max-width: 650px;
+.hero h1 {
+  font-size: 42px;
 }
 
 .subtitle {
-  font-size: 18px;
   color: var(--muted-grey);
-  margin-bottom: 20px;
+  margin: 15px 0;
 }
 
 .positioning {
-  font-size: 20px;
-  margin: 20px 0 30px;
+  max-width: 600px;
+  margin: 20px auto;
 }
 
 .btn {
   display: inline-block;
-  padding: 12px 24px;
-  margin-right: 15px;
-  text-decoration: none;
+  padding: 12px 28px;
+  margin: 10px;
   border-radius: 4px;
-  font-weight: 600;
+  text-decoration: none;
+  font-weight: 500;
   transition: 0.3s ease;
 }
 
 .btn-primary {
-  background: var(--charcoal);
-  color: white;
-}
-
-.btn-primary:hover {
   background: var(--accent);
+  color: white;
 }
 
 .btn-outline {
-  border: 2px solid var(--charcoal);
+  border: 1px solid var(--charcoal);
   color: var(--charcoal);
 }
 
-.btn-outline:hover {
-  background: var(--charcoal);
-  color: white;
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
 }
 
 .card {
   background: white;
-  padding: 30px;
-  margin-bottom: 25px;
+  padding: 25px;
+  margin-bottom: 20px;
   border-radius: 6px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
 }
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 20px;
 }
 
 footer {
   text-align: center;
-  padding: 40px 0;
+  padding: 40px;
+  background: white;
+  margin-top: 60px;
   color: var(--muted-grey);
 }
 </style>
@@ -133,23 +122,21 @@ footer {
 <body>
 
 <section class="hero">
-  <div class="container hero-content">
-    <h1>Pallavi Raghu</h1>
-    <div class="subtitle">Financial Analyst | E-commerce & Operations Specialist</div>
-    <div class="positioning">
-      Driving revenue growth through data, systems, and structured execution.
-    </div>
-    <a href="#experience" class="btn btn-primary">View Experience</a>
-    <a href="#contact" class="btn btn-outline">Get in Touch</a>
+  <h1>Pallavi Raghu</h1>
+  <div class="subtitle">Financial Analyst | E-commerce & Operations Specialist</div>
+  <div class="positioning">
+    Driving revenue growth through data, systems, and structured execution.
   </div>
+  <a href="#experience" class="btn btn-primary">View Experience</a>
+  <a href="#contact" class="btn btn-outline">Get in Touch</a>
 </section>
 
 <section id="about">
   <div class="container">
     <h2>About</h2>
     <p>
-      I’ve worked across e-commerce operations, sales, financial analysis, and enrolment-focused roles.
-      My work sits at the intersection of numbers, systems, and people, supporting revenue growth through structured processes and clear execution.
+      I’ve worked across e-commerce operations, sales, financial analysis, and enrolment-focused roles. 
+      My work sits at the intersection of numbers, systems, and people — supporting revenue growth through structured processes and clear execution.
     </p>
   </div>
 </section>
@@ -159,8 +146,7 @@ footer {
     <h2>Education</h2>
     <div class="card">
       <h3>B.Com in Taxation</h3>
-      <p>Amrita School of Arts and Science, Mysore, Karnataka</p>
-      <p>2017 – 2020</p>
+      <p>Amrita School of Arts and Science, Mysore | 2017 – 2020</p>
     </div>
   </div>
 </section>
@@ -170,18 +156,7 @@ footer {
     <h2>Experience</h2>
 
     <div class="card">
-      <h3>Financial Analyst — Optum</h3>
-      <p>Feb 2024 – Mar 2025</p>
-      <ul>
-        <li>Built financial models for budgeting and forecasting</li>
-        <li>Conducted variance analysis to identify cost-saving opportunities</li>
-        <li>Automated reporting using Power BI and Advanced Excel</li>
-        <li>Created real-time dashboards for leadership</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>E-commerce Assistant — Market Union</h3>
+      <h3>E-commerce Assistant – Market Union</h3>
       <p>Nov 2025 – Jan 2026</p>
       <ul>
         <li>Managed Amazon, Flipkart, IndiaMART & Alibaba operations</li>
@@ -189,30 +164,37 @@ footer {
       </ul>
     </div>
 
-     <div class="card">
-<div class="experience-item">
-  <h3>E-Commerce & Supply Chain Operations Associate</h3>
-  <div class="company">Collaboration / Freelance</div>
-  <ul>
-    <li>Managed end-to-end e-commerce operations (B2C & B2B)</li>
-    <li>Oversaw inventory, logistics, SKU management, and vendor coordination</li>
-    <li>Worked with Amazon warehouse systems for logistics and returns</li>
-    <li>Analyzed digital marketing performance (GA4, CRO, PPC)</li>
-    <li>Used Shopify and WooCommerce for store and product management</li>
-    <li>Created Power BI and Excel dashboards for operations tracking</li>
-  </ul>
-</div>
+    <div class="card">
+      <h3>Financial Analyst – Optum</h3>
+      <p>Feb 2024 – Mar 2025</p>
+      <ul>
+        <li>Built budgeting and forecasting financial models</li>
+        <li>Conducted variance analysis & cost optimization</li>
+        <li>Automated reports using Power BI & Advanced Excel</li>
+        <li>Ensured GST compliance</li>
+      </ul>
+    </div>
 
-<div class="card">
-<div class="experience-item">
-  <h3>Enrollment & Eligibility Representative</h3>
-  <div class="company">UnitedHealth Group | May 2022 – May 2023</div>
-  <ul>
-    <li>Verified client eligibility and processed enrollments</li>
-    <li>Maintained audit-ready documentation</li>
-    <li>Collaborated on workflow automation initiatives to reduce errors</li>
-  </ul>
-</div>
+    <div class="card">
+      <h3>E-Commerce & Supply Chain Operations Associate</h3>
+      <p>Freelance / Collaboration</p>
+      <ul>
+        <li>Managed B2C & B2B e-commerce operations</li>
+        <li>Oversaw inventory, logistics & vendor coordination</li>
+        <li>Analyzed GA4, CRO & PPC performance</li>
+        <li>Created Power BI dashboards</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Enrollment & Eligibility Representative – UnitedHealth Group</h3>
+      <p>May 2022 – May 2023</p>
+      <ul>
+        <li>Verified eligibility & processed enrollments</li>
+        <li>Maintained audit-ready documentation</li>
+        <li>Supported workflow automation</li>
+      </ul>
+    </div>
 
   </div>
 </section>
@@ -225,6 +207,33 @@ footer {
       <div class="card"><strong>E-Commerce:</strong><br>Shopify, WooCommerce, Amazon Ops</div>
       <div class="card"><strong>Marketing:</strong><br>SEO, PPC, Email Marketing</div>
       <div class="card"><strong>Operations:</strong><br>Inventory, Supply Chain, CRM</div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <h2>Services</h2>
+    <div class="card">
+      <h3>Financial Analysis & Reporting</h3>
+      <p>Dashboards, forecasting models, structured reporting and compliance-focused execution.</p>
+    </div>
+    <div class="card">
+      <h3>E-commerce Operations Management</h3>
+      <p>End-to-end operations including listings, inventory, logistics and growth optimization.</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <h2>Impact & Projects</h2>
+    <div class="card">
+      <ul>
+        <li>Supported measurable e-commerce sales growth</li>
+        <li>Improved operational efficiency through system optimization</li>
+        <li>Enabled structured data-driven decision making</li>
+      </ul>
     </div>
   </div>
 </section>
@@ -248,24 +257,18 @@ footer {
 </footer>
 
 <script>
-  const sections = document.querySelectorAll("section");
+const sections = document.querySelectorAll("section");
 
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.style.opacity = "1";
-        entry.target.style.transform = "translateY(0)";
-      }
-    });
-  }, { threshold: 0.1 });
-
-  sections.forEach(section => {
-    section.style.opacity = "0";
-    section.style.transform = "translateY(40px)";
-  section.style.transition = "all 0.9s cubic-bezier(0.4, 0, 0.2, 1)";
-
-    observer.observe(section);
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.style.opacity = "1";
+      entry.target.style.transform = "translateY(0)";
+    }
   });
+}, { threshold: 0.1 });
+
+sections.forEach(section => observer.observe(section));
 </script>
 
 </body>
