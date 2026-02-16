@@ -31,7 +31,7 @@ body {
 
 .container {
   width: 90%;
-  max-width: 1100px;
+  max-width: 1000px;
   margin: auto;
   padding: 80px 0;
 }
@@ -40,44 +40,59 @@ h1, h2, h3 {
   font-weight: 600;
 }
 
+h1 {
+  font-size: 42px;
+}
+
 h2 {
-  margin-bottom: 30px;
   font-size: 28px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: var(--graphite);
 }
 
 .hero {
-  background: white;
-  text-align: center;
-  padding: 120px 20px;
-}
-
-.hero h1 {
-  font-size: 42px;
+  padding: 120px 0;
+  text-align: left;
 }
 
 .subtitle {
   color: var(--muted-grey);
-  margin: 15px 0;
+  margin-top: 10px;
+  font-weight: 400;
 }
 
 .positioning {
+  margin-top: 20px;
+  font-size: 18px;
   max-width: 600px;
-  margin: 20px auto;
 }
 
 .btn {
   display: inline-block;
-  padding: 12px 28px;
-  margin: 10px;
-  border-radius: 4px;
+  margin-top: 30px;
+  padding: 12px 24px;
+  border-radius: 6px;
   text-decoration: none;
   font-weight: 500;
   transition: 0.3s ease;
 }
 
 .btn-primary {
-  background: var(--accent);
+  background: var(--charcoal);
   color: white;
+  margin-right: 15px;
+}
+
+.btn-primary:hover {
+  background: black;
 }
 
 .btn-outline {
@@ -85,58 +100,76 @@ h2 {
   color: var(--charcoal);
 }
 
-.btn:hover {
-  transform: translateY(-3px);
+.btn-outline:hover {
+  background: var(--charcoal);
+  color: white;
 }
 
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 0;
+  color: var(--muted-grey);
+  font-size: 14px;
+}
+
+/* Scroll Animation */
 section {
   opacity: 0;
   transform: translateY(40px);
   transition: all 0.8s ease;
 }
 
-.card {
-  background: white;
-  padding: 25px;
-  margin-bottom: 20px;
-  border-radius: 6px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-}
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
-  gap: 20px;
-}
-
-footer {
-  text-align: center;
-  padding: 40px;
-  background: white;
-  margin-top: 60px;
-  color: var(--muted-grey);
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 </style>
 </head>
 
 <body>
 
-<section class="hero">
-  <h1>Pallavi Raghu</h1>
-  <div class="subtitle">Financial Analyst | E-commerce & Operations Specialist</div>
-  <div class="positioning">
-    Driving revenue growth through data, systems, and structured execution.
+<section class="hero visible">
+  <div class="container">
+    <h1>Pallavi Raghu</h1>
+    <div class="subtitle">Financial Analyst | E-commerce & Operations Specialist</div>
+    <div class="positioning">
+      Driving revenue growth through data, systems, and structured execution.
+    </div>
+    <a href="#experience" class="btn btn-primary">View Experience</a>
+    <a href="#contact" class="btn btn-outline">Get in Touch</a>
   </div>
-  <a href="#experience" class="btn btn-primary">View Experience</a>
-  <a href="#contact" class="btn btn-outline">Get in Touch</a>
 </section>
 
 <section id="about">
   <div class="container">
     <h2>About</h2>
     <p>
-      I’ve worked across e-commerce operations, sales, financial analysis, and enrolment-focused roles. 
-      My work sits at the intersection of numbers, systems, and people — supporting revenue growth through structured processes and clear execution.
+      I’ve worked across e-commerce operations, sales, financial analysis, and enrolment-focused roles.
+      My work sits at the intersection of numbers, systems, and people, supporting revenue growth through structured processes and clear execution.
     </p>
   </div>
 </section>
@@ -146,7 +179,8 @@ footer {
     <h2>Education</h2>
     <div class="card">
       <h3>B.Com in Taxation</h3>
-      <p>Amrita School of Arts and Science, Mysore | 2017 – 2020</p>
+      <p>Amrita School of Arts and Science, Mysore</p>
+      <p>2017 – 2020</p>
     </div>
   </div>
 </section>
@@ -156,43 +190,45 @@ footer {
     <h2>Experience</h2>
 
     <div class="card">
-      <h3>E-commerce Assistant – Market Union</h3>
-      <p>Nov 2025 – Jan 2026</p>
+      <h3>Financial Analyst — Optum</h3>
+      <p>Feb 2024 – Mar 2025</p>
       <ul>
-        <li>Managed Amazon, Flipkart, IndiaMART & Alibaba operations</li>
-        <li>Supported listing management and order processing</li>
+        <li>Built financial models for budgeting and forecasting</li>
+        <li>Conducted variance analysis for cost-saving insights</li>
+        <li>Automated reporting using Power BI & Advanced Excel</li>
+        <li>Created real-time dashboards for leadership</li>
+        <li>Ensured GST compliance & policy adherence</li>
       </ul>
     </div>
 
     <div class="card">
-      <h3>Financial Analyst – Optum</h3>
-      <p>Feb 2024 – Mar 2025</p>
+      <h3>E-commerce Assistant — Market Union</h3>
+      <p>Nov 2025 – Jan 2026</p>
       <ul>
-        <li>Built budgeting and forecasting financial models</li>
-        <li>Conducted variance analysis & cost optimization</li>
-        <li>Automated reports using Power BI & Advanced Excel</li>
-        <li>Ensured GST compliance</li>
+        <li>Managed Amazon, Flipkart, IndiaMART & Alibaba operations</li>
+        <li>Supported listing management & order processing</li>
       </ul>
     </div>
 
     <div class="card">
       <h3>E-Commerce & Supply Chain Operations Associate</h3>
-      <p>Freelance / Collaboration</p>
+      <p>Collaboration / Freelance</p>
       <ul>
-        <li>Managed B2C & B2B e-commerce operations</li>
-        <li>Oversaw inventory, logistics & vendor coordination</li>
+        <li>Managed end-to-end e-commerce operations (B2C & B2B)</li>
+        <li>Oversaw inventory, logistics, SKU & vendor coordination</li>
         <li>Analyzed GA4, CRO & PPC performance</li>
-        <li>Created Power BI dashboards</li>
+        <li>Used Shopify & WooCommerce</li>
+        <li>Built Power BI & Excel dashboards</li>
       </ul>
     </div>
 
     <div class="card">
-      <h3>Enrollment & Eligibility Representative – UnitedHealth Group</h3>
+      <h3>Enrollment & Eligibility Representative — UnitedHealth Group</h3>
       <p>May 2022 – May 2023</p>
       <ul>
-        <li>Verified eligibility & processed enrollments</li>
+        <li>Verified client eligibility & processed enrollments</li>
         <li>Maintained audit-ready documentation</li>
-        <li>Supported workflow automation</li>
+        <li>Collaborated on workflow automation initiatives</li>
       </ul>
     </div>
 
@@ -203,37 +239,10 @@ footer {
   <div class="container">
     <h2>Core Skills</h2>
     <div class="skills-grid">
-      <div class="card"><strong>Analytics:</strong><br>Power BI, Advanced Excel, GA4, CRO</div>
-      <div class="card"><strong>E-Commerce:</strong><br>Shopify, WooCommerce, Amazon Ops</div>
-      <div class="card"><strong>Marketing:</strong><br>SEO, PPC, Email Marketing</div>
-      <div class="card"><strong>Operations:</strong><br>Inventory, Supply Chain, CRM</div>
-    </div>
-  </div>
-</section>
-
-<section id="services">
-  <div class="container">
-    <h2>Services</h2>
-    <div class="card">
-      <h3>Financial Analysis & Reporting</h3>
-      <p>Dashboards, forecasting models, structured reporting and compliance-focused execution.</p>
-    </div>
-    <div class="card">
-      <h3>E-commerce Operations Management</h3>
-      <p>End-to-end operations including listings, inventory, logistics and growth optimization.</p>
-    </div>
-  </div>
-</section>
-
-<section id="projects">
-  <div class="container">
-    <h2>Impact & Projects</h2>
-    <div class="card">
-      <ul>
-        <li>Supported measurable e-commerce sales growth</li>
-        <li>Improved operational efficiency through system optimization</li>
-        <li>Enabled structured data-driven decision making</li>
-      </ul>
+      <div class="card"><strong>Analytics</strong><br>Power BI, Advanced Excel, GA4, CRO</div>
+      <div class="card"><strong>E-Commerce</strong><br>Shopify, WooCommerce, Amazon Ops</div>
+      <div class="card"><strong>Marketing</strong><br>SEO, PPC, Email Marketing</div>
+      <div class="card"><strong>Operations</strong><br>Inventory, Supply Chain, CRM</div>
     </div>
   </div>
 </section>
@@ -261,14 +270,15 @@ const sections = document.querySelectorAll("section");
 
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
-    if(entry.isIntersecting){
-      entry.target.style.opacity = "1";
-      entry.target.style.transform = "translateY(0)";
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
     }
   });
 }, { threshold: 0.1 });
 
-sections.forEach(section => observer.observe(section));
+sections.forEach(section => {
+  observer.observe(section);
+});
 </script>
 
 </body>
